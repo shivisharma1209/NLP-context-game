@@ -1,0 +1,9 @@
+**/.DS_Store
+myenv
+**/__pycache__/**
+db.sqlite3
+**/glove.6B.300d.txt
+
+**/embeddings.npy
+**/result.json
+**/word2id.json

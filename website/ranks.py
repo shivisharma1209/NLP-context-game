@@ -3,12 +3,18 @@ import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 import json
 import random
+import pickle
+import bcolz
 
-embeddings_path = 'embeddings.npy'
-embeddings = np.load(embeddings_path)
+glove_path = '/Users/phantsure/Documents/Coding/Projects/contexto/MyGame/glove.6B'
+vectors = bcolz.open(f'{glove_path}/6B.50.dat')[:]
+words = pickle.load(open(f'{glove_path}/6B.50_words.pkl', 'rb'))
+word2idx = pickle.load(open(f'{glove_path}/6B.50_idx.pkl', 'rb'))
 
-word2id_path = 'word2id.json'
-word2id = json.load(open(word2id_path))
+glove = {w: vectors[word2idx[w]] for w in words}
+
+embeddings = np.array([glove[word] for word in words])
+word2id = word2idx
 
 # Function to calculate the cosine similarity between two word vectors
 def get_word_similarity(embeddings, word2id, word1, word2):

@@ -1,8 +1,8 @@
 **/.DS_Store
-myenv
+env
 **/__pycache__/**
 db.sqlite3
-**/glove.6B.300d.txt
+**/glove.6B
 
 **/embeddings.npy
 **/result.json

@@ -1,0 +1,145 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8;
+}
+
+/* Container for centering and alignment */
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Header styling */
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #333;
+}
+
+header p {
+    color: #666;
+}
+
+/* Main form styling */
+main {
+    margin-top: 20px;
+}
+
+#word-input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+#guess-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#guess-button:hover {
+    background-color: #218838;
+}
+
+/* Result and Progress bar styling */
+.result {
+    margin-top: 20px;
+}
+
+.success {
+    font-size: 1.5rem;
+    color: #28a745;
+}
+
+.progress-bar-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    height: 30px;
+    background-color: #4caf50;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+/* Footer styling */
+.ques{
+    margin-top: 30px;
+    color: #666;
+    font-size: 1rem;
+}
+
+.give-up {
+    background-color: #ffd700;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.give-up:hover {
+    background-color: #ff9d00;
+}
+
+/* Previous guesses styling */
+.previous-guesses {
+    margin-top: 20px;
+}
+.previous-guesses h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+.previous-guesses ul {
+    list-style-type: none;
+    padding: 0;
+}
+.previous-guesses li {
+    margin-bottom: 10px;
+}
+.previous-guesses .progress-bar-container {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.previous-guesses .progress-bar {
+    background-color: #4caf50;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* Messages styling */
+.messages {
+    margin-top: 20px;
+    color: red;
+}

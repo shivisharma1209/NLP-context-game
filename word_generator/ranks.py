@@ -1,4 +1,3 @@
-import os
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 import json
@@ -6,8 +5,8 @@ import random
 import pickle
 import bcolz
 
-glove_path = '/Users/phantsure/Documents/Coding/Projects/contexto/MyGame/glove.6B'
-vectors = bcolz.open(f'{glove_path}/6B.50.dat')[:]
+glove_path = './glove.6B'
+vectors = bcolz.open(f'{glove_path}/6B.300.dat')[:]
 words = pickle.load(open(f'{glove_path}/6B.300_words.pkl', 'rb'))
 word2idx = pickle.load(open(f'{glove_path}/6B.300_idx.pkl', 'rb'))
 

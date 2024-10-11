@@ -3,12 +3,10 @@ from django.contrib import messages
 import json
 import math
 
-LEN_DATA = 51000
-
 def home(request):
     if request.method == 'POST':
         word = request.POST['word']
-        with open('./website/result.json', 'r') as file:
+        with open('./result.json', 'r') as file:
             data = json.load(file)
         if word in data:
             previous_guesses = request.session.get('previous_guesses', [])
@@ -19,7 +17,7 @@ def home(request):
                 if rank == 1:
                     progress_percentage = 100
                 else:
-                    progress_percentage = (math.log(LEN_DATA / data[word])) / math.log(LEN_DATA) * 100
+                    progress_percentage = (math.log(len(data) / data[word])) / math.log(len(data)) * 100
                 previous_guesses.append({
                     'word': word,
                     'rank': rank,

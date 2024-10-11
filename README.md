@@ -2,6 +2,10 @@
 
 WordStorm is a web-based game where players guess a secret word based on its similarity to other words. The game provides feedback on the rank and progress of each guess, helping players to narrow down the correct word.
 
+
+![ScreenRecording2024-10-11at5 43 33PM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/da981449-ff92-4b50-9d26-984de046c1b7)
+
+
 ## Table of Contents
 
 - [WordStorm](#wordstorm)
@@ -82,13 +86,18 @@ WordStorm is a web-based game where players guess a secret word based on its sim
 
 ## Screenshots
 
-![Screenshot 1](screenshots/screenshot1.png)
+<img width="1265" alt="Screenshot 2024-10-11 at 5 31 48 PM" src="https://github.com/user-attachments/assets/4dd715da-547b-4686-a458-9c2094f4b5b1">
+
 *Home page*
 
-![Screenshot 2](screenshots/screenshot2.png)
+
+<img width="1268" alt="Screenshot 2024-10-11 at 5 32 27 PM" src="https://github.com/user-attachments/assets/b3f3baaf-dfe9-4e82-88c9-63a40debd0ab">
+
 *Different guesses and their ranks compared to the answer which is "disco"*
 
-![Screenshot 3](screenshots/screenshot3.png)
+
+<img width="1270" alt="Screenshot 2024-10-11 at 5 32 45 PM" src="https://github.com/user-attachments/assets/5848a078-161f-44f7-9dcd-3e7e9c26295e">
+
 *Display when the correct word with rank 1 is guessed*
 
 ## Credits

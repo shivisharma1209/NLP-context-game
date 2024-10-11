@@ -1,0 +1,7 @@
+bcolz-zipline==1.2.10
+Django==4.2.16
+nltk==3.9.1
+numpy==2.0.2
+regex==2024.9.11
+scikit-learn==1.5.2
+wordfreq==3.1.1

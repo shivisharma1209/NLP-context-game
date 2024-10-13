@@ -12,6 +12,8 @@ WordStorm is a web-based game where players guess a secret word based on its sim
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Setup Guide](#setup-guide)
+    - [Word Generator](#word-generator)
+    - [Django](#django)
   - [Usage](#usage)
   - [Screenshots](#screenshots)
   - [Credits](#credits)
@@ -53,6 +55,27 @@ WordStorm is a web-based game where players guess a secret word based on its sim
     ```
 
 ## Setup Guide
+
+### Word Generator
+
+1. Download the word embeddings file from the Official GLoVe website: [glove.6B.zip](https://nlp.stanford.edu/projects/glove/). And store in the `WordStorm` directory.
+    
+    ```bash
+    curl -O https://downloads.cs.stanford.edu/nlp/data/glove.6B.zip
+    unzip glove.6B.zip
+    ```
+
+2. Check if the `glove.6B.300d.txt` file is present in the `WordStorm/glove.6B` directory.
+3. Generate the random word to guess and its ranking to other words:
+
+    ```sh
+    python word_generator/big_data.py
+    python word_generator/ranks.py
+    ```
+
+    The script will generate a random word from the `glove.6B.300d.txt` file and rank it against other words based on their similarity.
+
+### Django
 
 1. **Apply database migrations:**
 
